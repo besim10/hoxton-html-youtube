@@ -8,12 +8,63 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: rgb(228, 201, 253);
+    padding: 0rem 1rem;
+}
+img{
+    width: 100%;
 }
 header{
-    background-color: rgb(121, 207, 207);
-    height: 50px;
+    height: 56px;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 3rem;
+    overflow: hidden;
 }
+.logo-section{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+img.hamburger-icon{
+    width: 20px;
+}
+img.logo-icon{
+    width: 80px;
+    margin-left: 1rem;
+}
+.searchBar{
+    display: grid;
+    padding: 0.5rem;
+}
+input[type="text"]{
+    border-radius: 2px;
+    border: solid 1px gray;
+    padding-left: 1rem;
+    outline: none;
+}
+input[type="text"]:focus { 
+    outline: none !important;
+    border: 1px solid #2968dd;
+ }
+ .register{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+ }
+ .register img{
+    width: 20px;
+ }
+ .register .Sign-Up{
+    border-radius: 2px;
+    border: 1px solid #77c0e9;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #77c0e9;
+ }
 main{
     display: grid;
     grid-template-columns: 250px 1fr;
