@@ -55,7 +55,6 @@ input[type="text"]:focus {
  }
  .register img{
     width: 20px;
-    
  }
  .register .Sign-Up{
     border-radius: 2px;
@@ -129,11 +128,84 @@ nav{
     color: black;
     text-decoration: none;
 }
-section{
-    background-color: #f9f9f9;
+content{
+    /* background-color: #ce3636; */
+    padding: 2rem;
+    outline: 1px dashed purple;
 }
-@media screen and (max-width: 600px){
+.content__box{
+    /* background-color: rgb(45, 45, 245); */
+    outline: 1px dashed purple;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); */
+    border-bottom: 2px solid gray;
+}
+.random__box{
+  /* background-color: blueviolet; */
+  height: 300px;
+  outline: 1px dashed purple;
+  display: grid;
+  grid-auto-flow: row;
+  min-width: 250px;
+}
+.box_video{
+    outline: 1px dashed purple;
+}
+
+.box_description{
+    outline: 1px dashed purple;
+    display: grid;
+    grid-template-columns: 40px 1fr 20px;
+    padding: 1rem 0rem;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+}
+.box_description__logo{
+    outline: 1px dashed purple;
+}
+.box_description__logo img{
+    max-width: fit-content;
+    border-radius: 25px;
+}
+.box_description__text{
+    outline: 1px dashed purple;
+    display: grid;
+    gap: 0.5rem;
+    grid-auto-flow: row;
+}
+.title{
+    font-weight: bold;
+}
+.more-info{
+    outline: 1px dashed purple;
+    display: grid;
+}
+.more-info a{
+    text-decoration: none;
+    color: #606060;
+}
+.dots{
+    outline: 1px dashed purple;
+}
+@media screen and (max-width: 500px){
     main{
         grid-template-columns: 100px 1fr;
+    }
+}
+@media screen  and (max-width: 1500px){
+    .content__box{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen  and (max-width: 1200px){
+    .content__box{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen  and (max-width: 900px){
+    .content__box{
+        grid-template-columns: 1fr;
     }
 }
